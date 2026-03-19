@@ -142,7 +142,7 @@ integrating modern AI capabilities into engineering workflows and decision-makin
 <p><strong>Oleksandr B.</strong><br>
 Engineering leader / system architect<br>
 <span class="about-photo__years">20+ years building complex systems</span><br><br><br><br>
-<span class="about-photo__accent">Engineer — making everything from everything</span></p>
+<span class="about-photo__accent">Engineer — making everything from everything<br>minimizing enthropy</span></p>
 `,principles:`<h1>Principles</h1>
 <p>Focus on constraints, not noise.</p>
 <p>Execution matters more than plans.</p>
