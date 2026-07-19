@@ -26,6 +26,10 @@ system_prompt: |
   - When the source contains multiple scale signals (org size, team size, mentorship circle, multi-team reach), choose the ones that best match the target profile for Summary.
   - Keep secondary scale signals in Experience where they belong; do not let a smaller local number become the headline if a larger organizational signal is more relevant to the profile.
 
+  Completeness:
+  - Do not fully omit an experience entry solely because it is secondary to this profile's focus — compress it to 1-3 bullets instead of dropping it.
+  - This applies especially to entries with no end date ("Present") in the source: ongoing/current work is relevant context regardless of framing.
+
   Output format (Markdown, English):
   - Return Markdown only.
   - Do not wrap the answer in code fences.
@@ -35,6 +39,8 @@ system_prompt: |
   Required structure:
   1) First line: `# <Full Name> — <Role-focused resume title>`
   2) Then: `## Summary` followed by 2-5 short paragraphs and/or tight bullets.
+     Lead with the situation/pattern this profile is strongest at (see "Recurring Pattern"
+     in the source), not with years-of-experience framing or a role-title restatement.
   3) Then: `## Experience` with one `###` block per employment period, in reverse chronological order.
 
   Each `### Experience` block must follow this template:
@@ -42,13 +48,29 @@ system_prompt: |
   Optional line: `> <LinkedIn-style aggregate duration if present in source, otherwise omit>`
   `#### <Job Title>`
   `<Start> – <End> · <duration if present in source, otherwise omit>`
+  Exception: if the company/entity name and the job title are identical or nearly identical
+  in the source (for example, a self-employment or personal-practice entry with no distinct
+  employer), merge them into a single `###` heading and omit the separate `####` line, rather
+  than repeating the same name twice — then continue with the duration line and bullets.
+  If the source frames this role with a short "situation I stepped into" narrative
+  (not just a task list), include one compact paragraph (1-3 sentences) directly under the
+  date line, condensed from the source, before the bullets. This is preferred over dropping
+  that context or squeezing it into a bullet. Otherwise, go straight to bullets.
   Then bullets (`- `) for achievements/responsibilities.
   Optional final bullet line: `- Skills: ...` (only technologies explicitly supported by the source for that role; do not merge skills across different roles at the same company).
 
   Then: `## Skills` grouped by category with bullets.
 
+  Tone:
+  - Direct, confident, analytical. No marketing fluff, no inspirational language.
+  - Avoid clichés: "passionate", "results-driven", "visionary", "thought leader",
+    "proven track record", "dynamic", "detail-oriented", and similar generic resume language.
+  - Let facts and outcomes carry the weight, not adjectives. If a sentence could describe
+    any senior engineer, cut it or make it specific to this source.
+
   Style:
-  - Prefer concise bullets over long prose in Experience.
+  - Prefer concise bullets over long prose in Experience, except for the optional
+    situational lead-in described above — keep that to 1-3 sentences, not a paragraph wall.
   - Avoid decorative Unicode bullets; use Markdown `-` bullets.
   - Do not use plain-text section titles like `Summary` / `Experience` without `#`/`##` headings.
 
@@ -118,6 +140,29 @@ profiles:
 
       Avoid over-indexing on full-time operational responsibilities like day-to-day hiring pipelines,
       unless the source markdown clearly supports that emphasis for this profile.
+
+  - slug: advisory
+    enabled: false
+    output_basename: oleksandr-burdun-advisory
+    title: Technical Advisor Resume
+    instructions: |
+      Generate a resume for a Technical Advisor / architecture advisor / technical due-diligence style engagement.
+
+      Primary focus:
+      - rapid diagnosis: finding the real structural or architectural constraint quickly
+      - architecture reviews, technical due diligence, and de-risking technical bets before they reach leadership
+      - advising leadership on technical and organizational decisions without owning day-to-day delivery
+      - short, high-leverage engagements: audits, assessments, second opinions
+
+      Secondary focus:
+      - occasional hands-on prototyping to validate a direction before recommending it
+      - cross-domain pattern-matching from prior transitions (architecture, teams, delivery) applied to a new situation
+
+      Scale selection for this profile:
+      - Prefer breadth of situations navigated (number/variety of transitions, industries, technical domains) over any single organization's scale.
+      - De-emphasize long-tenure operational leadership; this is not an operating-executive story.
+
+      Avoid positioning this as long-term operational leadership or full-time employment. This should read as an independent, engagement-based advisory role.
 
   - slug: tech-lead
     output_basename: oleksandr-burdun-tech-lead

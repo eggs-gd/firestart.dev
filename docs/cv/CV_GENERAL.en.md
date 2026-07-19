@@ -15,7 +15,7 @@ Across most of the companies where I worked, I was not always the formal final d
 I am comfortable stepping in as a technical leader, architect, organizer, or stabilizer depending on what the system actually needs. Sometimes that means building from zero. Sometimes it means reducing structural friction. Sometimes it means restoring momentum when execution has slowed down even though capable people are already in place.
 
 ## Additional Context
-My background includes formal Scrum training and certification earlier in my career, as well as coursework in financial modeling. I am also comfortable describing systems and processes in structured ways, including IDEF0 and IDEF3 when appropriate, although in practice I often prefer simpler custom UML-like representations when they communicate the idea more directly.
+I am comfortable describing systems and processes in structured ways, including IDEF0 and IDEF3 when appropriate, although in practice I often prefer simpler custom UML-like representations when they communicate the idea more directly. (See Certifications below for formal training/coursework.)
 
 Outside formal commercial roles, I often explore technology independently: contributing to open source from time to time, running a home server, extending tools I use myself, or digging into new technologies simply to understand them properly.
 
@@ -37,7 +37,6 @@ Raw material — not meant to be quoted verbatim in a corporate CV or LinkedIn t
 - Systems either move or decay.
 - Healthy systems grow. Broken systems stall.
 - Focus on constraints, not noise. Execution matters more than plans.
-- I tend to validate ideas by building them rather than debating them. My default way of evaluating a technology is to build something real with it.
 - Engineer — making everything from everything, minimizing entropy.
 
 ## Recurring Pattern (for CV-generation agents)

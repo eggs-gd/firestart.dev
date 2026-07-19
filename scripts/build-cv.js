@@ -585,8 +585,7 @@ function applyAsciiTypographyToText(text) {
 	return text
 		.replaceAll('\u00ad', '') // soft hyphen
 		.replaceAll('\u2011', '-') // non-breaking hyphen
-		.replaceAll('\u2013', '-') // en dash
-		.replaceAll('\u2014', '-') // em dash
+		.replace(/\s*[\u2013\u2014]\s*/g, ' - ') // en dash / em dash -> always spaced hyphen
 		.replaceAll('\u2212', '-') // minus sign
 		.replaceAll('\u00a0', ' ') // nbsp
 		.replaceAll('\u202f', ' ') // narrow nbsp
