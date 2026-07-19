@@ -6,7 +6,7 @@ export const contactIconPaths: Record<string, string> = {
 	linkedin: mdiLinkedin,
 	instagram: mdiInstagram,
 	telegram: mdiSend,
-	homelab: mdiServerNetwork
+	lab: mdiServerNetwork
 };
 
 export function getContactIconPath(name: string | null | undefined): string | undefined {
