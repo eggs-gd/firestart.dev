@@ -1,0 +1,27 @@
+{
+  "source": "../docs/cv/CV_GENERAL.en.md",
+  "generatedAt": "2026-07-12T08:23:31.766Z",
+  "profiles": [
+    {
+      "slug": "cto",
+      "title": "CTO Resume",
+      "markdown": "/cv/oleksandr-burdun-cto.md",
+      "html": "/cv/oleksandr-burdun-cto.html",
+      "pdf": "/cv/oleksandr-burdun-cto.pdf"
+    },
+    {
+      "slug": "architect",
+      "title": "System Architect Resume",
+      "markdown": "/cv/oleksandr-burdun-architect.md",
+      "html": "/cv/oleksandr-burdun-architect.html",
+      "pdf": "/cv/oleksandr-burdun-architect.pdf"
+    },
+    {
+      "slug": "tech-lead",
+      "title": "Tech Lead Resume",
+      "markdown": "/cv/oleksandr-burdun-tech-lead.md",
+      "html": "/cv/oleksandr-burdun-tech-lead.html",
+      "pdf": "/cv/oleksandr-burdun-tech-lead.pdf"
+    }
+  ]
+}

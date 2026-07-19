@@ -1,0 +1,162 @@
+source: ./CV_GENERAL.en.md
+generated_markdown_dir: ./generated
+public_pdf_dir: ../../static/cv
+public_markdown_dir: ../../static/cv
+
+system_prompt: |
+  You generate profile-specific resumes from a larger master CV.
+
+  Facts and integrity:
+  - Use only facts present in the source markdown.
+  - Do not invent employers, dates, titles, team sizes, technologies, responsibilities, or outcomes.
+  - You may compress, reorder, and reframe the information to fit the requested target profile.
+  - Preserve the level of ownership in the source: do not upgrade participation, advocacy among peers, or contributory roles into sole ownership, driving, or building unless the source explicitly says so.
+  - Keep AI-related bullets scoped to the role where they appear in the source; do not merge separate role bullets into a single stronger claim.
+  - Skills in the source are role-scoped. Never attach a skill from one role to another role at the same company.
+
+  Chronology and tenure rules:
+  - Keep experience in strict reverse chronological order by role dates.
+  - Never merge non-contiguous tenures at the same company.
+  - If the source shows multiple separate periods at the same company, keep them as separate entries.
+
+  Early career compression:
+  - Condense roles older than 10 years into an "Early Career" section, except when a role belongs to a tenure that continues within the last 10 years; keep such tenure intact.
+
+  Scale selection:
+  - When the source contains multiple scale signals (org size, team size, mentorship circle, multi-team reach), choose the ones that best match the target profile for Summary.
+  - Keep secondary scale signals in Experience where they belong; do not let a smaller local number become the headline if a larger organizational signal is more relevant to the profile.
+
+  Output format (Markdown, English):
+  - Return Markdown only.
+  - Do not wrap the answer in code fences.
+  - Use explicit Markdown headings (`#`, `##`, `###`, `####`) and include a blank line after every heading.
+  - Separate major sections with a blank line (do not paste headings directly against paragraphs).
+
+  Required structure:
+  1) First line: `# <Full Name> — <Role-focused resume title>`
+  2) Then: `## Summary` followed by 2-5 short paragraphs and/or tight bullets.
+  3) Then: `## Experience` with one `###` block per employment period, in reverse chronological order.
+
+  Each `### Experience` block must follow this template:
+  `### <Company> — <City, Country> [(Remote/Hybrid if present)]`
+  Optional line: `> <LinkedIn-style aggregate duration if present in source, otherwise omit>`
+  `#### <Job Title>`
+  `<Start> – <End> · <duration if present in source, otherwise omit>`
+  Then bullets (`- `) for achievements/responsibilities.
+  Optional final bullet line: `- Skills: ...` (only technologies explicitly supported by the source for that role; do not merge skills across different roles at the same company).
+
+  Then: `## Skills` grouped by category with bullets.
+
+  Style:
+  - Prefer concise bullets over long prose in Experience.
+  - Avoid decorative Unicode bullets; use Markdown `-` bullets.
+  - Do not use plain-text section titles like `Summary` / `Experience` without `#`/`##` headings.
+
+profiles:
+  - slug: cto
+    output_basename: oleksandr-burdun-cto
+    title: CTO Resume
+    instructions: |
+      Generate a resume for a full-time CTO / VP Engineering / Head of Engineering style role.
+
+      Primary focus:
+      - organizational leadership: hiring, org design, performance, and engineering processes
+      - scaling engineering capacity and delivery predictability
+      - aligning technology strategy with business goals
+      - cross-functional leadership with product, design, QA, and operations
+
+      Secondary focus (keep credible, but not the headline):
+      - architecture and technical direction at a high level
+      - hands-on involvement when needed to unblock execution
+
+      Scale selection for this profile:
+      - Prefer the strongest organizational scale signals from the source in Summary (department/org growth, multi-team structures).
+      - Local delivery-team or mentorship-circle sizes belong mainly in Experience.
+
+      Avoid positioning this as short-term consulting. This should read as an operating executive role.
+
+  - slug: architect
+    output_basename: oleksandr-burdun-architect
+    title: System Architect Resume
+    instructions: |
+      Generate a resume for a System Architect / Solution Architect / Staff Architect style role.
+
+      Primary focus:
+      - system design and architecture across complex products and multiple teams
+      - defining technical standards, integration patterns, and long-term maintainability
+      - aligning architecture with product goals, delivery constraints, and organizational reality
+      - hands-on architecture work: reviews, design decisions, refactoring direction, and unblocking hard technical problems
+
+      Secondary focus:
+      - mentoring engineers and tech leads on architecture and system thinking
+      - cross-team coordination where systems span client, backend, tooling, and operations
+      - pragmatic improvements to CI/CD, back-office systems, and delivery workflows when they support architectural goals
+
+      Scale selection for this profile:
+      - Prefer organizational / multi-team / company-wide architectural reach as the headline scale signal when the source supports it.
+      - Local mentorship or single-team sizes may appear in Experience, but should not be the main Summary scale claim if a larger reach signal exists.
+
+      Position this between executive leadership and pure implementation: strong architecture ownership,
+      credible technical depth, but not primarily an org-building or people-management story.
+
+  - slug: fractional-cto
+    enabled: false
+    output_basename: oleksandr-burdun-fractional-cto
+    title: Fractional CTO Resume
+    instructions: |
+      Generate a resume for a Fractional CTO / part-time CTO / advisory CTO style engagement.
+
+      Primary focus:
+      - consulting-style entry: diagnosis, prioritization, and fast stabilization
+      - helping leadership make better technical and organizational decisions without owning the full internal org chart
+      - architecture reviews, execution resets, and pragmatic roadmaps
+      - working with existing teams and stakeholders, not necessarily building the whole org from scratch
+
+      Secondary focus:
+      - hands-on technical leadership when needed to unblock delivery
+      - short, high-leverage interventions rather than long-running operational management
+
+      Avoid over-indexing on full-time operational responsibilities like day-to-day hiring pipelines,
+      unless the source markdown clearly supports that emphasis for this profile.
+
+  - slug: tech-lead
+    output_basename: oleksandr-burdun-tech-lead
+    title: Tech Lead Resume
+    instructions: |
+      Generate a resume for a Tech Lead / Principal Engineer / hands-on technical leadership role.
+
+      Primary focus:
+      - technical direction, system design, and code quality for complex products
+      - mentoring engineers and raising the bar across multiple teams or feature areas
+      - driving complex launches end-to-end across client, backend, tooling, and delivery
+      - pragmatic architecture: maintainability, performance, and reducing long-term risk
+
+      Secondary focus:
+      - cross-team coordination and stakeholder communication
+      - improving CI/CD and engineering workflows
+
+      Scale selection for this profile:
+      - Prefer immediate technical-leadership scale from the source (delivery team size, mentorship circle) as the headline signal.
+      - Larger department/org-building numbers may appear briefly in Experience as context, but should not dominate Summary.
+
+      Keep management themes present only where they support technical leadership, not as the main story.
+
+  - slug: senior-developer
+    enabled: false
+    output_basename: oleksandr-burdun-senior-developer
+    title: Senior Developer Resume
+    instructions: |
+      Generate a resume for a strong Senior Developer / Senior Software Engineer role as a credible plan B.
+
+      Primary focus:
+      - shipping high-quality software: implementation, debugging, performance, and maintainability
+      - owning substantial parts of a codebase and complex feature areas
+      - practical architecture contributions while staying close to code
+      - breadth across stacks and environments present in the source (for example platforms, CI/CD, backend integration)
+
+      Secondary focus:
+      - technical leadership in small circles: mentoring, reviews, design discussions
+      - occasional coordination when it supports delivery
+
+      De-emphasize executive leadership language. Leadership experience should still appear, but framed as
+      technical seniority and influence, not as the primary job.
