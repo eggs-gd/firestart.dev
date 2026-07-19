@@ -13,7 +13,7 @@ Restore momentum.
 Email | mailto:a.burdun@gmail.com
 LinkedIn | https://linkedin.com/in/dukobpa3
 Telegram | https://t.me/Dukobpa3
-Homelab | https://eggs.gd/
+Lab | https://eggs.gd/
 -->
 
 
@@ -216,7 +216,7 @@ My work only makes sense when there is real willingness to change the system.
 <!-- id: background -->
 # Background
 
-More than two decades inside complex technical organizations, working across structure, architecture and execution.
+About 20 years inside complex technical organizations, working across structure, architecture and execution.
 
 Work included:
 
@@ -268,7 +268,7 @@ Independent structural diagnosis and recommendations.
 
 **Oleksandr B.**<br>
 Engineering leader / system architect<br>
-<span class="about-photo__years">20+ years building complex systems</span><br><br><br><br>
+<span class="about-photo__years">About 20 years building complex systems</span><br><br><br><br>
 <span class="about-photo__accent">Engineer — making everything from everything<br>minimizing entropy</span>
 
 
@@ -315,5 +315,5 @@ A short conversation is usually enough to identify the real constraint and defin
 Email | mailto:a.burdun@gmail.com
 LinkedIn | https://linkedin.com/in/dukobpa3
 Telegram | https://t.me/Dukobpa3
-Homelab | https://eggs.gd/
+Lab | https://eggs.gd/
 -->

@@ -2,13 +2,13 @@
 
 ## Summary
 
-Hands-on technical leader and "local architect" who steers system design, code quality, and long-term maintainability for complex game products. Mentored and consulted 10+ engineers across multiple feature teams and led a 12-person cross-functional team to ship a full game clone and redesign to global launch in 5 months.
+Hands-on technical leader and system architect with a track record of setting technical direction, raising code quality, and shipping complex products across Unity clients and backend services.
 
-Drives end-to-end delivery across client (Unity), backend services, tooling, and release workflows. Notable work includes refactoring a large-scale monetization system to a backend-driven model with version control, rollbacks, and a custom back-office.
+Known for unblocking ambiguous or stalled initiatives and driving them to launch under tight timelines-e.g., led a 12-person cross-functional team to deliver a 5-month global reskin of a legacy 2012-era title; mentored and consulted 10+ engineers across multiple feature teams as a local architect.
 
-Pragmatic about architecture and execution: raises the bar through refactoring, CI/CD improvements (TeamCity, Unity Cloud, GitHub Actions), and alignment between client and microservices. Comfortable coordinating with art, QA, analytics, and LiveOps under tight deadlines.
+Pragmatic architecture focus: refactors that reduce long-term risk and boost iteration speed (e.g., turning a hardcoded client-bound monetization system into a safe, backend-driven capability); alignment across client, backend, tooling, and delivery.
 
-Consistently contributes to adoption of AI-assisted development and generative tooling where it materially improves engineering velocity and content workflows.
+Strength in cross-team coordination (art, QA, analytics, LiveOps) and workflow improvements, including CI/CD acceleration and automation that reduces friction and rework.
 
 ## Experience
 
@@ -20,120 +20,103 @@ Consistently contributes to adoption of AI-assisted development and generative t
 
 Mar 2025 - Jan 2026 · 11 mos
 
-- Led a 12-person cross-functional team to deliver a full game clone and redesign from scratch to global launch in 5 months, overseeing technical setup, design adaptation, and live-ops readiness.
-- Shipped a complete reskin and gameplay adaptation while maintaining compatibility with legacy systems.
-- Implemented a new tutorial framework from the ground up, improving onboarding metrics and content flexibility.
-- Coordinated closely with art, QA, analytics, and LiveOps to sustain velocity and quality under tight deadlines.
-- Participated in a cross-team initiative on AI-driven automation for dynamic content generation, aligning production workflows with generative tooling.
-- Skills: TypeScript; Java; TeamCity; Team Leadership; AI-Assisted Development
+- Took ownership of an unowned, overestimated multi-department POC; audited true delivery state, re-scoped, and drove a feature-cut reskin of a large legacy 2012-era title to global launch in 5 months.
+- Led a 12-person cross-functional team end-to-end, from technical setup and design adaptation to live-ops readiness.
+- Implemented a new tutorial framework from scratch, improving onboarding flexibility and metrics.
+- Automated synchronization between the project and parent codebase; parts were later folded into the broader engineering pipeline.
+- Contributed (not owner) to a cross-team AI-driven automation initiative to align production workflows with generative tooling.
+- Coordinated closely with art, QA, analytics, and LiveOps to maintain velocity and quality under tight deadlines.
+- Skills: TypeScript; Java; TeamCity; Team Leadership; AI-Assisted Development; Delivery Ownership / Turnaround
 
 #### Technical Lead
 
 Sep 2023 - Mar 2025 · 1 yr 7 mos
 
-- Led technical direction and architecture for a large-scale Match-3 title; mentored and consulted a group of 10+ engineers across multiple feature teams as a local architect responsible for design, code quality, and maintainability.
-- Refactored the entire monetization system from in-app JSON configs to a backend-driven solution with version control, rollback support, and dynamic economy updates via a custom back-office.
-- Drove multiple complex feature launches by aligning client-side Unity code with backend microservices.
-- Improved CI/CD pipelines in TeamCity for faster build validation and deployment.
-- Contributed as one of several internal advocates for AI adoption, introducing AI-assisted tooling into development workflows.
+- Led technical direction and architecture for a large Match-3 title; mentored and consulted 10+ engineers across multiple feature teams.
+- Refactored the monetization system from hardcoded client JSON to a backend-driven, versioned solution with controlled rollouts, rollback, and dynamic updates via a custom back office-enabling dozens of safe iterations per day instead of rare client-bound changes.
+- Drove complex feature launches spanning Unity client and backend microservices alignment.
+- Among the more active internal advocates for AI-assisted tooling adoption.
+- Improved CI/CD in TeamCity to accelerate build validation and deployments.
 - Skills: Unity; Java; Jenkins; TeamCity; AI-Assisted Development
 
-### Education Studios - Kyiv, Ukraine (Remote)
+### Project Ukraine - Kyiv, Ukraine (Remote)
 
-#### Senior Software Developer
+#### Senior Software Engineer
 
 Apr 2022 - Jul 2023 · 1 yr 4 mos
 
-- Contributed to an iOS-only 3D platformer/metroidvania across project architecture, character development, world building, and gameplay scripting (physics, effects, particles).
-- Worked with VFX Graph, Particle System, and several Burst-based features.
-- Set up CI/CD using Unity Cloud, Bash, and GitHub Actions.
-- Skills: Unity; iOS Development; Software Architecture; Visual Effects; Particle Effects; Continuous Integration and Continuous Delivery (CI/CD)
+- Owned architecture and technical foundation for an iOS-only metroidvania/platformer built in a 3D world.
+- Built a decoupled character system (MVC-style) and extensible state machine enabling new states without unrelated code changes.
+- Shipped an original, infinite knowledge-graph visualization system entirely in VFX Graph.
+- Delivered gameplay tooling for physics, effects, and particles; implemented several Burst-based performance-critical features.
+- Set up CI/CD with Unity Cloud, Bash, and GitHub Actions.
+- Skills: Unity; iOS Development; Software Architecture; MVC / State Machine Design; Visual Effects; Particle Effects; Continuous Integration and Continuous Delivery (CI/CD)
 
 ### Funzy Games - Kyiv, Ukraine
 
-#### Senior Software Developer
+#### Senior Software Engineer
 
 Aug 2021 - Apr 2022 · 9 mos
 
-- Implemented new bubble types with unique gameplay behavior for a bubble shooter; refactored complex existing implementations as new mechanics exposed architectural limits.
-- Introduced broader architectural improvements across the system.
-- Skills: Unity; iOS Development; Android Development; Software Architecture; Continuous Integration and Continuous Delivery (CI/CD)
+- Implemented new gameplay-specific bubble types and refactored complex existing ones in a bubble shooter.
+- Participated in (did not own) a targeted refactor to resolve race conditions/performance issues using CancellationTokens and a more SOLID, component-based architecture.
+- Contributed to broader architecture improvements as part of the team's ongoing efforts.
+- Skills: Unity; iOS Development; Android Development; Software Architecture; Concurrency / Race-Condition Debugging; Continuous Integration and Continuous Delivery (CI/CD)
 
 ### Playtika - Kyiv, Ukraine
 
 > 6 years 2 months
 
-#### Frontend Department Tech Lead
+#### Development Team Lead
 
 Feb 2017 - Aug 2019 · 2 yrs 7 mos
 
-- Organized the Kyiv front-end department from scratch; grew from a single developer to roughly 50 people across multiple self-managed agile teams.
-- Reduced onboarding time for newcomers to 2-3 days (vs. 3-8 weeks in similar departments).
-- Skills: Xamarin; .NET; C#; Java; CI/CD; Native Android Development; Native iOS Development
+- Organized the front-end development function from 1 person to ~50 across multiple cross-functional, self-managed agile teams.
+- Designed a distributed onboarding model that reduced ramp-up from 3-8 weeks to 2-3 days and enabled growth without proportional management overhead.
+- Skills: Xamarin; .NET; C#; Java; CI/CD; Native Android Development; Native iOS Development; Org Design / Knowledge-Sharing Systems
 
 #### Project Team Lead
 
 May 2015 - Feb 2017 · 1 yr 10 mos
 
-- Led the Dice Legends project from scratch and launched it to the Android market with a team of 5.
-- Tested and introduced architectural solutions later scaled across Playtika infrastructure (e.g., a microservices solution using Docker containers).
-- Skills: Unity 3D; .NET; C#; Java; CI/CD; Native Android Development; Native iOS Development
+- Led Dice Legends from scratch to Android launch with a 5-person team in 8 months; the title reached Top-5 in its category shortly after launch.
+- Proved a microservices approach with Docker on this project, informing broader company scaling that later became standard architecture.
+- Skills: Unity 3D; .NET; C#; Java; CI/CD; Native Android Development; Native iOS Development; Microservices / Docker
 
-#### Senior Software Developer
+#### Senior Software Engineer
 
 Jul 2013 - May 2015 · 1 yr 11 mos
 
-- Started as an AS3 developer; contributed to launching a Video Poker plugin inside Caesars Casino.
-- At several points worked as a client-side CTO assistant, prototyping ideas and technologies to improve technical and organizational processes.
-- Independently worked as a full-stack developer on Farkle Pro (launched on Facebook and adapted for three Russian social networks).
-- Skills: AS3; PHP/HTML/JS/CSS; Java; CI/CD (Ant, Maven, TeamCity, etc.)
+- Contributed to launching a Video Poker plugin inside Caesars Casino.
+- Served as a client-side CTO assistant for rapid prototyping: delivered 3-5 one-day prototypes de-risking logic frameworks and rendering optimizations (including CPU-to-GPU shifts).
+- Independently built and launched Farkle Pro on Facebook and adapted it for three Russian social networks.
+- Skills: AS3; PHP/HTML/JS/CSS; Java; CI/CD (Ant, Maven, TeamCity, etc.); Rapid Prototyping / Technical De-Risking; Rendering Optimization
 
 ## Early Career
 
-- Go Games Ltd - Kyiv, Ukraine | AS3 Developer | May 2012 - Jun 2013 · 1 yr 2 mos
-  - Worked on Go Fishing (live game, including fishing rod implementation); contributed to two additional initiatives.
-  - Skills: AS3; C#/ASP.NET (backend, web and offline tools); MSSQL; MongoDB; Photoshop; Flash Editor Scripting
-
-- Addicted - Ryazan, Russia | AS3 Developer | Aug 2011 - May 2012 · 10 mos
-  - Built and launched a social city-builder with a four-person team for Facebook/VK/Odnoklassniki; also contributed as a freelancer before joining full-time.
-  - Skills: AS3; Python; SQL; MongoDB; Redis; Debian (Ubuntu) Administration
-
-- Freelance - Kyiv, Ukraine | AS3 Developer | Nov 2008 - 2012 · 4 yrs
-  - Early career development work; often coordinated larger projects and served as the communication bridge between customers and dev teams.
-  - Skills: AS3; PHP/HTML/JS/CSS
-
-- New Project - Kyiv, Ukraine | Project Manager | Nov 2007 - Nov 2008 · 1 yr 1 mo
-  - Led ERP implementation and formalized business processes using IDEF0 and IDEF3.
-
-- ExpertSoft - Kyiv, Ukraine | Consultant / Project Manager / Sales Manager | Aug 2006 - Nov 2007 · 1 yr 4 mos total
-  - Delivered and supported business systems for auto parts and service (official Mazda dealer and others); earlier sold related solutions.
+- Go Games Ltd - Senior Software Engineer (May 2012 - Jun 2013): Core features on a live Go Fishing title; acted as tech lead for Find Object (~3 people); contributed to a second ~10-person project; backend/tools in C#/ASP.NET, MSSQL, MongoDB.
+- Addicted - Software Engineer (Aug 2011 - May 2012): Built two city-builder social games across Facebook/VK/Odnoklassniki; part of a 4-person team for a greenfield title.
+- Freelance - Technical Project Coordinator / Developer (Nov 2008 - 2012): Combined development with coordinating teams and client communication on larger projects.
+- New Project - Project Manager (Nov 2007 - Nov 2008): Led ERP implementation; formalized processes with IDEF0/IDEF3; built a custom 1C UTP configuration.
+- ExpertSoft - Consultant / Project Manager / Sales Manager (Aug 2006 - Nov 2007): Delivery and sales around automotive service/parts systems on 1C UTP.
 
 ## Skills
 
-- Architecture & Leadership
-  - Software Architecture; Team Leadership
+- Technical Leadership & Delivery
+  - Team Leadership; Mentoring; Delivery Ownership / Turnaround; Org Design / Knowledge-Sharing Systems; Cross-team Coordination; Rapid Prototyping / Technical De-Risking
 
-- Game Engineering
-  - Unity; Unity 3D; VFX Graph; Particle System; Burst-based features
+- Architecture & Platforms
+  - Software Architecture; Microservices / Docker; MVC / State Machine Design; Rendering Optimization; Concurrency / Race-Condition Debugging
 
-- Programming & Client
-  - C#; Java; TypeScript; AS3; PHP/HTML/JS/CSS; Xamarin
+- Game & Client Development
+  - Unity; iOS Development; Android Development; Visual Effects; Particle Effects; Unity Cloud
 
-- Mobile
-  - iOS Development; Android Development; Native iOS Development; Native Android Development
-
-- Backend & Infrastructure
-  - .NET; Microservices (Docker containers)
+- Backend & Languages
+  - .NET; C#; Java; TypeScript; AS3; PHP/HTML/JS/CSS
 
 - CI/CD & Tooling
-  - TeamCity; Jenkins; Unity Cloud; GitHub Actions; Bash; Continuous Integration and Continuous Delivery (CI/CD)
+  - TeamCity; Jenkins; GitHub Actions; CI/CD (Ant, Maven, TeamCity, etc.)
 
-- Data & Storage
-  - MSSQL; MongoDB; Redis
-
-- AI
-  - AI-Assisted Development; Generative tooling integration (content workflows)
-
-- Process & Modeling
-  - ERP Implementation; Business Process Modeling (IDEF0, IDEF3)
+- AI-Assisted Development
+  - AI-Assisted Development (advocacy and workflow integration within teams)
 

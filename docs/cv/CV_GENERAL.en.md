@@ -21,6 +21,25 @@ Outside formal commercial roles, I often explore technology independently: contr
 
 Some parts of my technical background are not fully visible from job titles alone. I write Go reasonably well and also have practical AI expertise, including work with multi-agent systems, RAG, MCP, ACP, and related integration patterns.
 
+## Certifications
+
+- Multi-Agent Systems *(issuer/date: to confirm)*
+- Financial Modeling coursework/certification *(issuer/date: to confirm)*
+- Scrum training and certification (earlier in career; issuer/date: to confirm)
+
+## Voice / Personal Notes (for CV-generation agents)
+
+Raw material — not meant to be quoted verbatim in a corporate CV or LinkedIn text, but useful when generating something more personality-forward (an Upwork proposal, a personal pitch, a cover letter, a landing page). Pull from here when the target format rewards voice over neutrality.
+
+- I love technology more than people — because it's logical. I love people more than technology — because they're not.
+- Leave small fights for small fighters.
+- Perfect systems are boring. The interesting work starts when something important stops moving.
+- Systems either move or decay.
+- Healthy systems grow. Broken systems stall.
+- Focus on constraints, not noise. Execution matters more than plans.
+- I tend to validate ideas by building them rather than debating them. My default way of evaluating a technology is to build something real with it.
+- Engineer — making everything from everything, minimizing entropy.
+
 ## Recurring Pattern (for CV-generation agents)
 
 Across roles, the recurring shape of my work is not a technology or an industry — it's a type of situation: a product, a team, or an architecture has outgrown its current stage, and no one has taken clear ownership of the move to the next one. Examples of the pattern showing up across this document:
@@ -51,6 +70,7 @@ Selected work:
 - Built a reusable **Markdown-to-Telegram publishing platform** exposing a REST API for rich-text and media publishing, now used as shared infrastructure across multiple applications.
 - Designed and operated self-hosted development infrastructure — containerized services, CI/CD, monitoring, backups and deployment automation — for personal products and experiments.
 - Continuously prototype AI-native engineering workflows using LLMs, agent orchestration, MCP-compatible services, retrieval pipelines and developer automation, to evaluate emerging technologies before adopting them professionally.
+- Built **JiveMax**, a complete modernization of the piCorePlayer UI (inspired by Logitech JiveLite) for the LMS/piCorePlayer ecosystem — redesigned the legacy embedded UI with responsive layouts across multiple hardware targets, and modernized the build system with Docker and GitHub Actions for automated cross-platform builds. Low-level, multi-architecture embedded work in C/C++/Lua. ([github.com/dukobpa3/jivemax](https://github.com/dukobpa3/jivemax))
 
 Selected public projects are available at **eggs.gd** (only work that has matured beyond an internal prototype gets published there).
 
@@ -68,6 +88,7 @@ Selected public projects are available at **eggs.gd** (only work that has mature
 - Claude / Cursor / Codex
 - MCP
 - Multi-Agent Systems / RAG
+- C / C++ / Lua (embedded, multi-architecture)
 
 
 ### Playtika
