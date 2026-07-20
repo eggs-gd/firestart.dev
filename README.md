@@ -11,7 +11,7 @@ yarn dev
 
 Page content comes from `docs/CONTENT.en.md` (built into the site on `yarn content` / `yarn build`).
 
-CV profiles live under `docs/cv/` and are published into `static/cv/` via `yarn cv` (needs a local `.env` with an OpenAI key).
+CV/resume generation lives in a separate project: [`career-wizard`](../career-wizard).
 
 ## GitHub Pages
 

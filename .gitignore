@@ -3,9 +3,6 @@ node_modules
 /.svelte-kit
 /build
 /dist
-.env
-.env.*
-!.env.example
 
 # Generated at build time (scripts/build-content.js)
 src/lib/content/sections.generated.json
