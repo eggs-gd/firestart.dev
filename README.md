@@ -9,7 +9,7 @@ yarn install
 yarn dev
 ```
 
-Page content comes from `docs/CONTENT.en.md` (built into the site on `yarn content` / `yarn build`).
+Page content comes from `docs/CONTENT.en.md`, parsed directly at build/prerender time in `src/routes/+page.ts` (via `$lib/content/parseSections.ts`) — no separate content-build step.
 
 CV/resume generation lives in a separate project: [`career-wizard`](../career-wizard).
 

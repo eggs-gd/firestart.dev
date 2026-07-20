@@ -3,6 +3,3 @@ node_modules
 /.svelte-kit
 /build
 /dist
-
-# Generated at build time (scripts/build-content.js)
-src/lib/content/sections.generated.json

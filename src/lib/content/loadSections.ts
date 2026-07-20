@@ -1,5 +1,6 @@
 /**
- * Types for section content. Built from docs/CONTENT.en.md by scripts/build-content.js.
+ * Types for section content. Parsed from docs/CONTENT.en.md by ./parseSections.ts,
+ * invoked from src/routes/+page.ts at build/prerender time.
  * Convention: <!-- id: xxx --> then # block, ## cards, --- footer.
  */
 
