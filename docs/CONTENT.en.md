@@ -104,6 +104,7 @@ Typical outcomes:
 - architecture aligns with how the system actually evolves
 - teams stop fighting symptoms and start addressing real constraints
 - execution regains predictability
+- progress stops depending on constant escalation and individual heroics
 
 Progress becomes visible within weeks because the system stops working against itself.
 
@@ -160,6 +161,11 @@ The first step is always diagnosis.
 - what structure already exists
 - which parts of the system should stay untouched
 
+I separate the system as it is described from the system as it actually behaves.
+
+The goal is not to fix everything.  
+It is to find the smallest structural change that produces the largest shift in execution.
+
 The role emerges from what the system actually needs — not from a predefined title.
 
 I may operate across architecture, leadership and execution within the same engagement.
@@ -169,8 +175,6 @@ Engagement ranges from a single session to ongoing involvement depending on how 
 Sometimes that means acting as a strategist.  
 Sometimes as interim leadership.  
 Sometimes temporarily helping execution.
-
-Leave small fights for small fighters.
 
 The goal is always the same: restore a system that can move without constant intervention.
 
@@ -191,13 +195,16 @@ Not a report — but a system that works better than before.
 <!-- id: reality -->
 # Reality
 
-Not every project can be fixed.
+Not every constraint is yours to move.
 
 Sometimes the real constraint is political.  
 Sometimes it's structural debt accumulated over years.  
 Sometimes the organization simply isn't ready to change.
 
-In those cases the most valuable outcome is understanding the real situation early.
+Some constraints can be removed.  
+Some can only be exposed.
+
+Knowing the difference early saves months of wasted execution.
 
 
 <!-- id: what-i-dont-do -->
