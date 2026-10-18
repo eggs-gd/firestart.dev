@@ -42,7 +42,14 @@
 			<nav class="contact-links" aria-label="Contact">
 				{#each html.contactLinks as link}
 					{@const iconPath = getContactIconPath(link.icon ?? link.label)}
-					<a class="contact-links__item" href={link.href} rel="noopener noreferrer" target="_blank">
+					<a
+						class="contact-links__item"
+						href={link.href}
+						rel="noopener noreferrer"
+						target="_blank"
+						data-cta={link.label}
+						data-cta-placement="contact"
+					>
 						{#if iconPath}
 							<Icon path={iconPath} size={1.25} class="contact-links__icon" />
 						{/if}

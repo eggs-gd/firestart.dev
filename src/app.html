@@ -72,6 +72,17 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-0N2CRESZMG');
+
+			// Any element with data-cta="…" reports a cta_click event.
+			document.addEventListener('click', function (e) {
+				var el = e.target instanceof Element && e.target.closest('[data-cta]');
+				if (!el) return;
+				gtag('event', 'cta_click', {
+					cta_target: el.getAttribute('data-cta'),
+					cta_placement: el.getAttribute('data-cta-placement') || '',
+					transport_type: 'beacon'
+				});
+			});
 		</script>
 
 		%sveltekit.head%
