@@ -13,8 +13,8 @@
 		title?: string;
 		/** Card layout: row (grid), column (stack), or strip (scrolling row). */
 		cardsLayout?: 'row' | 'column' | 'strip';
-		/** Content kind. plaque = narrow tinted block. */
-		kind?: 'plaque';
+		/** Content kind. plaque = narrow tinted block, plaque-wide = the same block at full column width. */
+		kind?: 'plaque' | 'plaque-wide';
 	}
 	let { id, html, title = '', cardsLayout, kind }: Props = $props();
 
@@ -132,6 +132,7 @@
 	id={id}
 	class="section section--{id}"
 	class:section--plaque={kind === 'plaque'}
+	class:section--plaque-wide={kind === 'plaque-wide'}
 	aria-labelledby={title ? `${id}-heading` : undefined}
 >
 	{#if title}

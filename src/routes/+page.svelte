@@ -13,5 +13,5 @@
 		cardsLayout={opts?.cards === 'row' || opts?.cards === 'column' || opts?.cards === 'strip'
 			? opts.cards
 			: undefined}
-		kind={opts?.kind === 'plaque' ? opts.kind : undefined} />
+		kind={opts?.kind === 'plaque' || opts?.kind === 'plaque-wide' ? opts.kind : undefined} />
 {/each}

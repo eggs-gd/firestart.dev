@@ -28,5 +28,5 @@ export type Sections = Record<string, string | CardSection | ContactSection | Bl
 
 export type SectionOrder = string[];
 
-/** Options from <!-- id: xxx; cards: row|column|strip; kind: plaque -->. Class section--<id> is automatic. */
+/** Options from <!-- id: xxx; cards: row|column|strip; kind: plaque|plaque-wide -->. Class section--<id> is automatic. */
 export type SectionOptions = Record<string, { cards?: string; kind?: string }>;

@@ -207,7 +207,7 @@ Typical outputs:
 Not a report — but a system that works better than before.
 
 
-<!-- id: background; kind:plaque -->
+<!-- id: background; kind:plaque-wide -->
 **Background**
 
 About 20 years inside complex technical organizations, working across structure, architecture and execution.

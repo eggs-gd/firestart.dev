@@ -119,19 +119,29 @@ a:hover {
 	}
 }
 
-/* kind: plaque — narrow tinted block */
-.section--plaque {
-	max-width: calc(var(--content-max-width) * 0.8);
+/* kind: plaque — tinted block at 80% of the column. kind: plaque-wide — the same block, full column. */
+.section--plaque,
+.section--plaque-wide {
 	background: rgba(80, 120, 70, 0.14);
 	border-radius: 0.5rem;
 	padding: 2rem 2.5rem;
 	font-size: 1.25rem;
 	line-height: 1.35;
 }
-.section--plaque .section__body.prose p {
+.section--plaque {
+	max-width: calc(var(--content-max-width) * 0.8);
+}
+.section--plaque-wide {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: calc(var(--content-max-width) + 2rem);
+}
+.section--plaque .section__body.prose p,
+.section--plaque-wide .section__body.prose p {
 	margin: 0.6em 0;
 }
-.section--plaque .section__body.prose p + p {
+.section--plaque .section__body.prose p + p,
+.section--plaque-wide .section__body.prose p + p {
 	margin-top: 1em;
 }
 

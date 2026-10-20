@@ -1,6 +1,6 @@
 /**
  * Parses docs/CONTENT.en.md into { sections, sectionOrder, sectionOptions }.
- * Convention: <!-- id: section-id --> or <!-- id: section-id; cards: row|column|strip; kind: plaque -->.
+ * Convention: <!-- id: section-id --> or <!-- id: section-id; cards: row|column|strip; kind: plaque|plaque-wide -->.
  * Class section--<id> is automatic. Runs at build/prerender time from +page.ts
  * (no separate build step, no generated intermediate file).
  */
