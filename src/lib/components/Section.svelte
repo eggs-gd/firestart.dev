@@ -13,8 +13,10 @@
 		title?: string;
 		/** Card layout: row (grid), column (stack), or strip (scrolling row). */
 		cardsLayout?: 'row' | 'column' | 'strip';
+		/** Content kind. plaque = narrow tinted block. */
+		kind?: 'plaque';
 	}
-	let { id, html, title = '', cardsLayout }: Props = $props();
+	let { id, html, title = '', cardsLayout, kind }: Props = $props();
 
 	const isCardSection = (v: unknown): v is CardSection =>
 		typeof v === 'object' && v !== null && Array.isArray((v as CardSection).cards);
@@ -126,7 +128,12 @@
 	});
 </script>
 
-<section id={id} class="section section--{id}" aria-labelledby={title ? `${id}-heading` : undefined}>
+<section
+	id={id}
+	class="section section--{id}"
+	class:section--plaque={kind === 'plaque'}
+	aria-labelledby={title ? `${id}-heading` : undefined}
+>
 	{#if title}
 		<h2 id="{id}-heading" class="section__title">{title}</h2>
 	{/if}

@@ -12,5 +12,6 @@
 		html={(data.sections as Sections)[id]}
 		cardsLayout={opts?.cards === 'row' || opts?.cards === 'column' || opts?.cards === 'strip'
 			? opts.cards
-			: undefined} />
+			: undefined}
+		kind={opts?.kind === 'plaque' ? opts.kind : undefined} />
 {/each}

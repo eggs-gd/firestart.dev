@@ -35,6 +35,14 @@ They fail because systems become unclear, overloaded, or politically stuck.
 That's where I step in — to identify the real constraint and make the system move again.
 
 
+<!-- id: manifesto; kind: plaque -->
+Systems rarely collapse because people are weak.
+
+They collapse because structure dissolves.
+
+Fix the structure and execution returns.
+
+
 <!-- id: where-i-step-in; cards: column -->
 # Where I step in
 
@@ -108,14 +116,6 @@ Typical outcomes:
 Progress becomes visible within weeks because the system stops working against itself.
 
 
-<!-- id: manifesto -->
-Systems rarely collapse because people are weak.
-
-They collapse because structure dissolves.
-
-Fix the structure and execution returns.
-
-
 <!-- id: perspective -->
 # How I see systems
 
@@ -146,6 +146,19 @@ Over the years the same patterns appear again and again.
 At that point execution stops looking like a technical problem.
 
 It becomes a systems problem.
+
+
+<!-- id: reality; kind: plaque -->
+Not every constraint is yours to move.
+
+Sometimes the real constraint is political.//
+Sometimes it's structural debt accumulated over years.//
+Sometimes the organization simply isn't ready to change.
+
+Some constraints can be removed.//
+Some can only be exposed.
+
+Knowing the difference early saves months of wasted execution.
 
 
 <!-- id: how-i-work -->
@@ -194,34 +207,8 @@ Typical outputs:
 Not a report — but a system that works better than before.
 
 
-<!-- id: reality -->
-Not every constraint is yours to move.
-
-Sometimes the real constraint is political.//
-Sometimes it's structural debt accumulated over years.//
-Sometimes the organization simply isn't ready to change.
-
-Some constraints can be removed.//
-Some can only be exposed.
-
-Knowing the difference early saves months of wasted execution.
-
-
-<!-- id: what-i-dont-do -->
-# What I don't do
-
-I'm usually not the right person if:
-
-- the goal is to maintain the current process rather than change it
-- the team wants validation instead of diagnosis
-- decisions are expected to be avoided rather than made
-- the organization prefers meetings over execution
-
-My work only makes sense when there is real willingness to change the system.
-
-
-<!-- id: background -->
-# Background
+<!-- id: background; kind:plaque -->
+**Background**
 
 About 20 years inside complex technical organizations, working across structure, architecture and execution.
 
@@ -253,6 +240,19 @@ If necessary, I can remove blockers directly — not only design around them.
  -->
 
 
+<!-- id: what-i-dont-do -->
+# What I don't do
+
+I'm usually not the right person if:
+
+- the goal is to maintain the current process rather than change it
+- the team wants validation instead of diagnosis
+- decisions are expected to be avoided rather than made
+- the organization prefers meetings over execution
+
+My work only makes sense when there is real willingness to change the system.
+
+
 <!-- id: work-format; cards: row -->
 # Typical engagement formats
 
@@ -271,15 +271,6 @@ A limited period to identify constraints and reset execution.
 Independent structural diagnosis and recommendations.
 
 
-<!-- id: about-photo -->
-![Oleksandr B.](/photo1.jpg)
-
-**Oleksandr B.**<br>
-Engineering leader / system architect<br>
-<span class="about-photo__years">About 20 years building complex systems</span><br><br><br><br>
-<span class="about-photo__accent">Engineer — making everything from everything<br>minimizing entropy</span>
-
-
 <!-- id: principles -->
 # Principles
 
@@ -291,6 +282,15 @@ Leave small fights for small fighters.
 
 Healthy systems grow.//
 Broken systems stall.
+
+
+<!-- id: about-photo -->
+![Oleksandr B.](/photo1.jpg)
+
+**Oleksandr B.**<br>
+Engineering leader / system architect<br>
+<span class="about-photo__years">About 20 years building complex systems</span><br><br><br><br>
+<span class="about-photo__accent">Engineer — making everything from everything<br>minimizing entropy</span>
 
 
 <!-- id: current-focus -->
@@ -308,7 +308,7 @@ Perfect systems are boring.
 The interesting work starts when something important stops moving.
 
 
-<!-- id: closing -->
+<!-- id: closing; kind: plaque -->
 Systems either move or decay.
 
 

@@ -1,6 +1,6 @@
 /**
  * Parses docs/CONTENT.en.md into { sections, sectionOrder, sectionOptions }.
- * Convention: <!-- id: section-id --> or <!-- id: section-id; cards: row|column|strip -->.
+ * Convention: <!-- id: section-id --> or <!-- id: section-id; cards: row|column|strip; kind: plaque -->.
  * Class section--<id> is automatic. Runs at build/prerender time from +page.ts
  * (no separate build step, no generated intermediate file).
  */
@@ -26,8 +26,8 @@ function md(text: string): string {
 
 const ID_COMMENT = /<!-- id: ([a-z0-9-]+)(?:\s*;\s*([^>]+))? -->\n/g;
 
-function parseCommentOptions(rest: string | undefined): { cards?: string } {
-	const opts: { cards?: string } = {};
+function parseCommentOptions(rest: string | undefined): { cards?: string; kind?: string } {
+	const opts: { cards?: string; kind?: string } = {};
 	if (!rest || !rest.trim()) return opts;
 	for (const part of rest.split(';')) {
 		const colon = part.indexOf(':');
@@ -35,6 +35,7 @@ function parseCommentOptions(rest: string | undefined): { cards?: string } {
 		const key = part.slice(0, colon).trim().toLowerCase();
 		const value = part.slice(colon + 1).trim();
 		if (key === 'cards' && value) opts.cards = value;
+		if (key === 'kind' && value) opts.kind = value;
 	}
 	return opts;
 }

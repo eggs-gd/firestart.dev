@@ -48,7 +48,7 @@ a:hover {
 	color: #b8d4e8;
 }
 
-/* About photo: plaque (like manifesto), image left + caption right */
+/* About photo: image left + caption right, on the plaque tint */
 .section--about-photo {
 	max-width: calc(var(--content-max-width) * 0.8);
 	margin-left: auto;
@@ -119,20 +119,20 @@ a:hover {
 	}
 }
 
-.section--manifesto,
-.section--closing,
-.section--reality {
+/* kind: plaque — narrow tinted block */
+.section--plaque {
 	max-width: calc(var(--content-max-width) * 0.8);
 	background: rgba(80, 120, 70, 0.14);
 	border-radius: 0.5rem;
 	padding: 2rem 2.5rem;
 	font-size: 1.25rem;
-	line-height: 1.5;
+	line-height: 1.35;
 }
-.section--manifesto .section__body.prose :global(p),
-.section--closing .section__body.prose :global(p),
-.section--reality .section__body.prose :global(p) {
+.section--plaque .section__body.prose p {
 	margin: 0.6em 0;
+}
+.section--plaque .section__body.prose p + p {
+	margin-top: 1em;
 }
 
 .card__title {
