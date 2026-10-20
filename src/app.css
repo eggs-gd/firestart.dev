@@ -10,9 +10,11 @@ html {
 	font-family: system-ui, -apple-system, Segoe UI, sans-serif;
 	background: var(--bg);
 	color: var(--text);
+	overflow-x: clip;
 }
 
 body {
+	margin: 0;
 	background: var(--bg);
 	min-height: 100vh;
 }
@@ -133,6 +135,10 @@ a:hover {
 	margin: 0.6em 0;
 }
 
+.card__title {
+	color: #b8d4e8;
+}
+
 .section__title {
 	margin-top: 0;
 }
@@ -190,6 +196,90 @@ a:hover {
 
 .block__cards--column {
 	grid-template-columns: 1fr;
+}
+
+.card-row {
+	--card-row-gap: 1rem;
+	--card-w: calc(50cqw - var(--card-row-gap));
+	position: relative;
+	container-type: inline-size;
+}
+
+.card-row__nav {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.75rem;
+}
+
+.card-row__stage {
+	position: relative;
+}
+
+.card-row__viewport {
+	width: calc(100% + var(--card-w));
+	margin-left: calc(var(--card-w) / -2);
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+	overscroll-behavior-x: contain;
+	visibility: hidden;
+}
+
+.card-row__viewport.is-ready {
+	visibility: visible;
+}
+
+.card-row__viewport::-webkit-scrollbar {
+	display: none;
+}
+
+.card-row__track {
+	display: flex;
+	gap: var(--card-row-gap);
+}
+
+.card-row .card {
+	box-sizing: border-box;
+	flex: 0 0 var(--card-w);
+	scroll-snap-align: center;
+}
+
+.card-row__fade {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: calc(var(--card-w) / 2);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.card-row__fade--left {
+	right: 100%;
+	background: linear-gradient(to left, transparent, var(--bg));
+}
+
+.card-row__fade--right {
+	left: 100%;
+	background: linear-gradient(to right, transparent, var(--bg));
+}
+
+.card-row__arrow {
+	display: grid;
+	place-items: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--bg) 72%, transparent);
+	color: var(--text);
+	cursor: pointer;
+}
+
+.card-row__arrow:hover {
+	border-color: rgba(255, 255, 255, 0.32);
+	background: color-mix(in srgb, var(--bg) 88%, transparent);
 }
 
 .card {

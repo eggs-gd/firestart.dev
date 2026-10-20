@@ -10,5 +10,7 @@
 	<Section
 		id={id}
 		html={(data.sections as Sections)[id]}
-		cardsLayout={opts?.cards === 'row' || opts?.cards === 'column' ? opts.cards : undefined} />
+		cardsLayout={opts?.cards === 'row' || opts?.cards === 'column' || opts?.cards === 'strip'
+			? opts.cards
+			: undefined} />
 {/each}

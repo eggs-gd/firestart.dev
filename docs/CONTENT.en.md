@@ -5,7 +5,7 @@ I step into complex projects when execution stops moving.
 
 Or earlier — before it does.
 
-Identify the real constraint.  
+Identify the real constraint.
 Restore momentum.
 
 
@@ -18,11 +18,11 @@ Lab | https://eggs.gd/
 
 
 <!-- id: identity -->
-Strategist — identify the real constraint
+**Strategist — identify the real constraint**
 
-Integrator — make systems actually work together
+**Integrator — make systems actually work together**
 
-Engineer — build what the system is missing
+**Engineer — build what the system is missing**
 
 
 <!-- id: what-i-do -->
@@ -42,36 +42,34 @@ That's where I step in — to identify the real constraint and make the system m
 
 Early-stage projects often move fast — but without structure.
 
-That works for a while.  
-But small mistakes here compound quickly and become hard to fix later.
+That works for a while.
+Then small decisions begin compounding into expensive constraints.
 
 Typical interventions:
 
-- defining a clear execution model
-- aligning stakeholders around real priorities
-- separating signal from operational noise
-- building minimal structure that still allows speed
+- define a clear execution model
+- align stakeholders around real priorities
+- separate signal from operational noise
+- build minimal structure that still allows speed
+- turn the first working version into something the team can keep evolving
 
-**Goal:** build structure early so growth doesn't break execution later.
+**Goal:** build structure early so growth does not break execution later.
 
 
 ## When a system becomes stuck
 
 Many teams reach a point where effort grows but results stop improving.
 
-This usually means the system accumulated friction:
-
-- unclear ownership
-- architectural debt
-- decision bottlenecks
-- political noise
+The problem is rarely one bad task.
+It is usually friction accumulated across ownership, architecture, process and incentives.
 
 Typical interventions:
 
-- identifying the real constraint
-- simplifying architecture and responsibilities
-- restoring decision velocity
-- resetting the execution model
+- identify the real constraint
+- simplify architecture and responsibilities
+- restore decision velocity
+- reset the execution model
+- remove recurring manual work where automation or better structure can carry it
 
 **Goal:** remove friction so the system starts moving again.
 
@@ -82,10 +80,11 @@ Sometimes a company needs to open a new direction while the main system keeps ru
 
 Typical interventions:
 
-- isolating the new initiative from legacy noise
-- defining structure and ownership early
-- building a minimal execution framework
-- stabilizing the first stage of growth
+- isolate the new initiative from legacy noise
+- define structure and ownership early
+- build a minimal execution framework
+- validate the first stage with working software, not only plans
+- stabilize the handoff into normal operation
 
 **Goal:** launch something new without breaking the existing system.
 
@@ -160,10 +159,11 @@ The first step is always diagnosis.
 - where the real constraint lives
 - what structure already exists
 - which parts of the system should stay untouched
+- what can change now without breaking the rest
 
 I separate the system as it is described from the system as it actually behaves.
 
-The goal is not to fix everything.  
+The goal is not to fix everything.
 It is to find the smallest structural change that produces the largest shift in execution.
 
 The role emerges from what the system actually needs — not from a predefined title.
@@ -172,8 +172,8 @@ I may operate across architecture, leadership and execution within the same enga
 
 Engagement ranges from a single session to ongoing involvement depending on how deep the problem goes.
 
-Sometimes that means acting as a strategist.  
-Sometimes as interim leadership.  
+Sometimes that means acting as a strategist.
+Sometimes as interim leadership.
 Sometimes temporarily helping execution.
 
 The goal is always the same: restore a system that can move without constant intervention.
@@ -188,20 +188,20 @@ Typical outputs:
 - concrete changes to structure, ownership and decision flow
 - simplified architecture and responsibilities
 - a reset execution model the team can actually follow
+- a working artifact, prototype, automation or reference implementation when the missing piece
+  needs to be built
 
 Not a report — but a system that works better than before.
 
 
 <!-- id: reality -->
-# Reality
-
 Not every constraint is yours to move.
 
-Sometimes the real constraint is political.  
-Sometimes it's structural debt accumulated over years.  
+Sometimes the real constraint is political.
+Sometimes it's structural debt accumulated over years.
 Sometimes the organization simply isn't ready to change.
 
-Some constraints can be removed.  
+Some constraints can be removed.
 Some can only be exposed.
 
 Knowing the difference early saves months of wasted execution.
@@ -225,16 +225,17 @@ My work only makes sense when there is real willingness to change the system.
 
 About 20 years inside complex technical organizations, working across structure, architecture and execution.
 
-Work included:
+That work has spanned engineering-team restructuring, R&D, system architecture and complex project transitions.
 
-- restructuring engineering teams
-- leading R&D directions
-- designing system architectures
-- navigating difficult project transitions
+A few notable results:
+
+- Built an engineering department from 1 to ~50 people.
+- Took greenfield products from idea to market launch.
+- Re-scoped and shipped a stalled company-priority project in 5 months.
+- Replaced hardcoded release-bound systems with configurable platforms.
+- Built AI-assisted tools and workflows used in real daily execution.
 
 Comfortable operating between strategy and deep technical work.
-
-
 <!-- aside: technical-footnote
 Technical background ranges from low-level systems engineering
 (C/C++, Go, Lua, IoT and similar environments)
@@ -288,7 +289,7 @@ Execution matters more than plans.
 
 Leave small fights for small fighters.
 
-Healthy systems grow.  
+Healthy systems grow.
 Broken systems stall.
 
 
