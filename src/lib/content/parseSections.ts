@@ -7,8 +7,21 @@
 import { marked } from 'marked';
 import type { Sections, SectionOrder, SectionOptions, CardSection, ContactSection, BlockSection } from './loadSections';
 
+/**
+ * A line ending with // is a hard break inside the same paragraph.
+ * A blank line is still a new paragraph. // is not whitespace, so format-on-save keeps it.
+ */
+function hardBreaks(text: string): string {
+	return text
+		.split(/(```[\s\S]*?```)/g)
+		.map((chunk, i) =>
+			i % 2 === 1 ? chunk : chunk.replace(/[ \t]*\/\/[ \t]*(?=\r?\n|$)/g, '<br>')
+		)
+		.join('');
+}
+
 function md(text: string): string {
-	return marked.parse(text, { async: false }) as string;
+	return marked.parse(hardBreaks(text), { async: false }) as string;
 }
 
 const ID_COMMENT = /<!-- id: ([a-z0-9-]+)(?:\s*;\s*([^>]+))? -->\n/g;
