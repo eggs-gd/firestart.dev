@@ -70,8 +70,10 @@ function parseBlockWithCards(content: string): CardSection | null {
 		cards.push({ title, html: md(body) });
 	}
 
-	const footer = footerRaw ? md(footerRaw) : null;
-	return { intro, cards, footer };
+	const footerSection = footerRaw ? parseSectionWithAsides(footerRaw) : null;
+	const footerBlocks = footerSection?.blocks ?? null;
+	const footer = footerRaw && !footerBlocks ? md(footerRaw) : null;
+	return { intro, cards, footer, footerBlocks };
 }
 
 const LINKS_BLOCK = /\n<!-- links\n([\s\S]*?)\n-->/;
@@ -122,9 +124,9 @@ function parseSectionWithAsides(content: string): BlockSection | null {
 	if (paragraphs.length === 0) return null;
 	const triggerMd = paragraphs.pop() as string;
 	const introMd = paragraphs.join('\n\n');
-	let triggerHtml = md(triggerMd);
-	if (triggerHtml.startsWith('<p>') && triggerHtml.endsWith('</p>') && !triggerHtml.slice(4, -5).includes('</p>')) {
-		triggerHtml = triggerHtml.slice(4, -5);
+	let triggerHtml = md(triggerMd).trim();
+	if (triggerHtml.startsWith('<p>') && triggerHtml.endsWith('</p>') && !triggerHtml.slice(3, -4).includes('</p>')) {
+		triggerHtml = triggerHtml.slice(3, -4);
 	}
 	const blocks: BlockSection['blocks'] = [];
 	if (introMd) blocks.push({ type: 'html', content: md(introMd) });

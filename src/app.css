@@ -388,8 +388,11 @@ a:hover {
 
 .aside-line__chevron {
 	font-size: 0.7em;
-	opacity: 0.8;
+	color: #7eb8da;
 	flex-shrink: 0;
+}
+.aside-line__trigger:hover .aside-line__chevron {
+	color: #9dd4f5;
 }
 
 .aside-line__body {

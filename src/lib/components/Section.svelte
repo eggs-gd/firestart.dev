@@ -3,7 +3,7 @@
 	import { mdiChevronLeft, mdiChevronRight } from '@mdi/js';
 	import Icon from './Icon.svelte';
 	import FoldedAside from './FoldedAside.svelte';
-	import type { CardSection, ContactSection, BlockSection, AsideBlock } from '$lib/content/loadSections';
+	import type { CardSection, ContactSection, BlockSection, AsideBlock, ContentBlock } from '$lib/content/loadSections';
 	import { getContactIconPath } from '$lib/content/contactIcons';
 
 	interface Props {
@@ -166,13 +166,7 @@
 		</div>
 	{:else if isBlockSection(html)}
 		<div class="section__body">
-			{#each html.blocks as block}
-				{#if block.type === 'html'}
-					<div class="prose">{@html block.content}</div>
-				{:else if isAsideBlock(block)}
-					<FoldedAside id={block.id} trigger={block.trigger} body={block.body} />
-				{/if}
-			{/each}
+			{@render contentBlocks(html.blocks)}
 		</div>
 	{:else if isCardSection(html)}
 		<div class="block">
@@ -222,7 +216,11 @@
 					{/each}
 				</div>
 			{/if}
-			{#if html.footer}
+			{#if html.footerBlocks}
+				<div class="block__footer">
+					{@render contentBlocks(html.footerBlocks)}
+				</div>
+			{:else if html.footer}
 				<footer class="block__footer prose">
 					{@html html.footer}
 				</footer>
@@ -234,3 +232,13 @@
 		</div>
 	{/if}
 </section>
+
+{#snippet contentBlocks(blocks: ContentBlock[])}
+	{#each blocks as block}
+		{#if block.type === 'html'}
+			<div class="prose">{@html block.content}</div>
+		{:else if isAsideBlock(block)}
+			<FoldedAside id={block.id} trigger={block.trigger} body={block.body} />
+		{/if}
+	{/each}
+{/snippet}

@@ -30,9 +30,9 @@ Lab | https://eggs.gd/
 
 Most projects don't fail because people are incompetent.
 
-They fail because systems become unclear, overloaded, or politically stuck.
+They fail because ownership becomes unclear, dependencies accumulate, or decisions get stuck.
 
-That's where I step in — to identify the real constraint and make the system move again.
+That's where I step in — to find what is holding execution back and make the system move again.
 
 
 <!-- id: manifesto; kind: plaque -->
@@ -55,7 +55,7 @@ Then small decisions begin compounding into expensive constraints.
 
 Typical interventions:
 
-- define a clear execution model
+- define how decisions are made and work moves to delivery
 - align stakeholders around real priorities
 - separate signal from operational noise
 - build minimal structure that still allows speed
@@ -73,10 +73,10 @@ It is usually friction accumulated across ownership, architecture, process and i
 
 Typical interventions:
 
-- identify the real constraint
-- simplify architecture and responsibilities
+- trace where work actually gets blocked
+- remove dependencies that make routine changes unnecessarily expensive
 - restore decision velocity
-- reset the execution model
+- reset ownership and execution flow
 - remove recurring manual work where automation or better structure can carry it
 
 **Goal:** remove friction so the system starts moving again.
@@ -88,13 +88,28 @@ Sometimes a company needs to open a new direction while the main system keeps ru
 
 Typical interventions:
 
-- isolate the new initiative from legacy noise
-- define structure and ownership early
+- isolate the new initiative from legacy dependencies and competing priorities
+- establish clear decision ownership
 - build a minimal execution framework
 - validate the first stage with working software, not only plans
 - stabilize the handoff into normal operation
 
 **Goal:** launch something new without breaking the existing system.
+
+---
+
+**Most organizations don't slow down because people work less**
+<!-- aside: perspective
+They slow down because complexity grows faster than clarity.
+
+At some point decisions become slower than problems.
+
+When that happens, the system stops moving.
+
+The work is not adding more effort.
+
+The work is restoring structure.
+-->
 
 
 <!-- id: results -->
@@ -102,7 +117,7 @@ Typical interventions:
 
 The goal is not to add more effort.
 
-The goal is to restore a system that can move again.
+It is to make progress possible without constantly fighting the system.
 
 Typical outcomes:
 
@@ -113,23 +128,7 @@ Typical outcomes:
 - execution regains predictability
 - progress stops depending on constant escalation and individual heroics
 
-Progress becomes visible within weeks because the system stops working against itself.
-
-
-<!-- id: perspective -->
-# How I see systems
-
-Most organizations don't slow down because people work less.
-
-They slow down because complexity grows faster than clarity.
-
-At some point decisions become slower than problems.
-
-When that happens, the system stops moving.
-
-The work is not adding more effort.
-
-The work is restoring structure.
+Progress becomes visible through concrete changes in how work moves.
 
 
 <!-- id: failure-modes -->
@@ -168,13 +167,15 @@ I don't sell predefined roles.
 
 The first step is always diagnosis.
 
+I separate the system as it is described from the system as it actually behaves.
+
+That means understanding:
+
 - where decisions are actually made in practice
-- where the real constraint lives
+- where work gets blocked and why
 - what structure already exists
 - which parts of the system should stay untouched
 - what can change now without breaking the rest
-
-I separate the system as it is described from the system as it actually behaves.
 
 The goal is not to fix everything.//
 It is to find the smallest structural change that produces the largest shift in execution.
@@ -188,6 +189,8 @@ Engagement ranges from a single session to ongoing involvement depending on how 
 Sometimes that means acting as a strategist.//
 Sometimes as interim leadership.//
 Sometimes temporarily helping execution.
+
+The work doesn't end at diagnosis. The next step is to verify that the intervention actually changed how the system behaves.
 
 The goal is always the same: restore a system that can move without constant intervention.
 
@@ -208,7 +211,7 @@ Not a report — but a system that works better than before.
 
 
 <!-- id: background; kind:plaque-wide -->
-**Background**
+### Background
 
 About 20 years inside complex technical organizations, working across structure, architecture and execution.
 
@@ -216,13 +219,13 @@ That work has spanned engineering-team restructuring, R&D, system architecture a
 
 A few notable results:
 
-- Built an engineering department from 1 to ~50 people.
+- Built an engineering department from **1 to ~50 people**.
 - Took greenfield products from idea to market launch.
-- Re-scoped and shipped a stalled company-priority project in 5 months.
+- Re-scoped and shipped a stalled company-priority project in **5 months**.
 - Replaced hardcoded release-bound systems with configurable platforms.
 - Built AI-assisted tools and workflows used in real daily execution.
 
-Comfortable operating between strategy and deep technical work.
+**Comfortable operating between strategy and deep technical work**
 <!-- aside: technical-footnote
 Technical background ranges from low-level systems engineering
 (C/C++, Go, Lua, IoT and similar environments)
@@ -248,7 +251,7 @@ I'm usually not the right person if:
 - the goal is to maintain the current process rather than change it
 - the team wants validation instead of diagnosis
 - decisions are expected to be avoided rather than made
-- the organization prefers meetings over execution
+- meetings become a substitute for decisions and execution
 
 My work only makes sense when there is real willingness to change the system.
 

@@ -7,8 +7,10 @@
 export type CardSection = {
 	intro?: string | null;
 	cards: Array<{ title: string; html: string }>;
-	/** Content after --- in md: block footer (e.g. closing line). */
+	/** Content after --- when it is plain markdown. */
 	footer?: string | null;
+	/** Content after --- when it includes an aside. */
+	footerBlocks?: ContentBlock[] | null;
 };
 
 export type ContactSection = {
