@@ -26,6 +26,13 @@ a:hover {
 	color: #9dd4f5;
 }
 
+/* Section titles come from `# Heading` in the content and are emitted as <h2> (one <h1> per page);
+   they keep the size and spacing they had as <h1>. */
+h2.md-h1 {
+	font-size: 2em;
+	margin-block: 0.67em;
+}
+
 /* Base section layout. Each section gets .section--<id> automatically; override below when needed. */
 .section {
 	display: block;
@@ -410,4 +417,22 @@ a:hover {
 .aside-line__body.prose :global(ul) {
 	margin: 0.5em 0;
 	padding-left: 1.25em;
+}
+
+/* Site footer: copyright and the link to the portfolio, kept quiet. */
+.site-footer {
+	display: flex;
+	gap: 1.25rem;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: var(--content-max-width);
+	padding: 1rem 1rem 3rem;
+	color: #8a8a8a;
+	font-size: 0.85rem;
+}
+.site-footer a {
+	color: inherit;
+}
+.site-footer a:hover {
+	color: #9dd4f5;
 }
