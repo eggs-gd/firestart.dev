@@ -10,3 +10,8 @@
 </svelte:head>
 
 {@render children()}
+
+<footer class="site-footer">
+	<span>© {new Date().getFullYear()} Oleksandr B.</span>
+	<a href="https://eggs.gd">eggs.gd</a>
+</footer>

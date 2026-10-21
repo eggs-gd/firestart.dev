@@ -20,8 +20,16 @@ function hardBreaks(text: string): string {
 		.join('');
 }
 
+/**
+ * The page has one <h1> (the first section). Every later `# Heading` is a section title, so it is
+ * emitted as <h2 class="md-h1"> — same look (see app.css), correct outline for crawlers.
+ */
+let demoteH1 = false;
+
 function md(text: string): string {
-	return marked.parse(hardBreaks(text), { async: false }) as string;
+	const html = marked.parse(hardBreaks(text), { async: false }) as string;
+	if (!demoteH1) return html;
+	return html.replace(/<h1>/g, '<h2 class="md-h1">').replace(/<\/h1>/g, '</h2>');
 }
 
 const ID_COMMENT = /<!-- id: ([a-z0-9-]+)(?:\s*;\s*([^>]+))? -->\n/g;
@@ -155,6 +163,7 @@ export function parseSections(source: string): {
 	const regex = new RegExp(ID_COMMENT);
 
 	const consume = (id: string, content: string) => {
+		demoteH1 = sectionOrder.length > 0;
 		const contact = parseContactSection(content);
 		const withAsides = parseSectionWithAsides(content);
 		sections[id] = contact ?? parseBlockWithCards(content) ?? withAsides ?? md(content);
