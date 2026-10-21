@@ -43,6 +43,30 @@ They collapse because structure dissolves.
 Fix the structure and execution returns.
 
 
+<!-- id: failure-modes -->
+# Typical failure modes
+
+Over the years the same patterns appear again and again.
+
+- architecture grows faster than shared understanding
+- decision ownership becomes unclear
+- teams optimize locally but the system slows globally
+- delivery pressure accumulates technical debt faster than it can be repaid
+- organizations add process when the real problem is structure
+
+At that point execution stops looking like a technical problem.
+
+It becomes a systems problem.
+
+
+<!-- id: closing; kind: plaque -->
+A tree either grows or withers.
+
+Systems either move or decay.
+
+**Boring, working, stable.**
+
+
 <!-- id: where-i-step-in; cards: column -->
 # Where I step in
 
@@ -131,22 +155,6 @@ Typical outcomes:
 Progress becomes visible through concrete changes in how work moves.
 
 
-<!-- id: failure-modes -->
-# Typical failure modes
-
-Over the years the same patterns appear again and again.
-
-- architecture grows faster than shared understanding
-- decision ownership becomes unclear
-- teams optimize locally but the system slows globally
-- delivery pressure accumulates technical debt faster than it can be repaid
-- organizations add process when the real problem is structure
-
-At that point execution stops looking like a technical problem.
-
-It becomes a systems problem.
-
-
 <!-- id: reality; kind: plaque -->
 Not every constraint is yours to move.
 
@@ -184,8 +192,6 @@ The role emerges from what the system actually needs — not from a predefined t
 
 I may operate across architecture, leadership and execution within the same engagement.
 
-Engagement ranges from a single session to ongoing involvement depending on how deep the problem goes.
-
 Sometimes that means acting as a strategist.//
 Sometimes as interim leadership.//
 Sometimes temporarily helping execution.
@@ -193,6 +199,24 @@ Sometimes temporarily helping execution.
 The work doesn't end at diagnosis. The next step is to verify that the intervention actually changed how the system behaves.
 
 The goal is always the same: restore a system that can move without constant intervention.
+
+
+<!-- id: work-format; cards: row -->
+# Typical engagement formats
+
+The exact format depends on the situation — from short advisory sessions to ongoing fractional involvement.
+
+## Fractional involvement
+
+Regular strategic participation (part-time) while the system stabilizes.
+
+## Focused intervention
+
+A limited period to identify constraints and reset execution.
+
+## Architecture and system review
+
+Independent structural diagnosis and recommendations.
 
 
 <!-- id: deliverables -->
@@ -207,7 +231,7 @@ Typical outputs:
 - a working artifact, prototype, automation or reference implementation when the missing piece
   needs to be built
 
-Not a report — but a system that works better than before.
+Not just a report — but a system that works better than before.
 
 
 <!-- id: background; kind:plaque-wide -->
@@ -255,36 +279,7 @@ I'm usually not the right person if:
 
 My work only makes sense when there is real willingness to change the system.
 
-
-<!-- id: work-format; cards: row -->
-# Typical engagement formats
-
-The exact format depends on the situation — from short advisory sessions to ongoing fractional involvement.
-
-## Fractional involvement
-
-Regular strategic participation (part-time) while the system stabilizes.
-
-## Focused intervention
-
-A limited period to identify constraints and reset execution.
-
-## Architecture and system review
-
-Independent structural diagnosis and recommendations.
-
-
-<!-- id: principles -->
-# Principles
-
-Focus on constraints, not noise.
-
-Execution matters more than plans.
-
-Leave small fights for small fighters.
-
-Healthy systems grow.//
-Broken systems stall.
+**Leave small fights for small fighters.**
 
 
 <!-- id: about-photo -->
@@ -306,13 +301,10 @@ Right now I'm most interested in situations where:
 - early-stage systems need to be set up correctly from the start
 - a new direction needs to be launched inside an existing organization
 
-Perfect systems are boring.
-
+Perfect systems are boring.//
 The interesting work starts when something important stops moving.
 
-
-<!-- id: closing; kind: plaque -->
-Systems either move or decay.
+**Making it boring again is my passion.**
 
 
 <!-- id: contact -->
@@ -320,7 +312,8 @@ Systems either move or decay.
 
 If your project needs a structural reset, or execution feels harder than it should be — reach out.
 
-A short conversation is usually enough to identify the real constraint and define the next step.
+Start with a conversation. We'll establish whether there's a problem worth solving together and what the next step should be.
+
 
 <!-- links
 Email | mailto:a.burdun@gmail.com
